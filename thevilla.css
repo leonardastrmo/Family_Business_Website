@@ -1,7 +1,41 @@
 body {
     background-color : #FFFBEE;
     margin: 0px;
-    margin-right: 0px;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color:#E6B875;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a.active {
+    background-color: white;
+    color: #E6B875;
+  }
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    font-family: 'GeneralSansMedium';
+    font-size: 17;
+    width: 19.581vw;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: #E6B875;
+}
+
+.navbar li{
+    float: left;
+    width: 19.581vw;
 }
 
 @font-face {
@@ -187,14 +221,17 @@ body {
 
 #closing_statement {
     position: relative;
-    top: 5000px;
+    top: 4400px;
 }
 
 #perfect_sanctuary{
-    position: absolute;
+    position: relative;
+    top: 4350px;
     font-family: GeneralSansBold;
-    font-size: 42;
-    left: 50%
+    font-size: 42px;
+    left: 7%;
+    text-align: center;
+    width: 1200px;
 }
 
 #img_lowest_left {
@@ -219,6 +256,72 @@ body {
     height: 655px; /* Let the height adjust proportionally */
 }
 
+.carousel{
+    width: 90vw;
+    height: 50vw;
+    position: relative;
+    top: 1900px;
+    left: 5%;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img{
+    display: block;
+    width: 90vw;
+    height: auto;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel > ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    width: 50px;
+    height: 200px;
+    border: none;
+    font-size: 3rem;
+    top: 45%;
+    cursor: pointer;
+    background-color: #FFFBEE;
+    color: lightgray;
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+    background-color: #E6B875;
+    color: lightgray;
+}
+
+.carousel-button:focus{
+    outline: 1px solid black;
+}
+
+.carousel-button.prev{
+    left:0rem;
+}
+
+.carousel-button.next   {
+    right: 0rem;
+}
+
 #footnote{
     font-family: 'GeneralSansLight';
     font-size: 18;
@@ -227,7 +330,7 @@ body {
     background-color: #E6B875;
     position: relative;
     padding-top: 2%;
-    top: 5652px;
+    top: 5050px;
 }
 
 #contact{
@@ -237,4 +340,28 @@ body {
     line-height: 1;
     top: 14px;
     left: 7%;
+}
+
+.matrix_of_images {
+    position: relative;
+    top: 2250px;
+    left: 2%;
+    width: 97vw;
+}
+
+.matrix_of_images > img{
+    width: 30vw;
+    height: auto;
+    padding: 1%;
+}
+
+.theproperty{
+    position: relative;
+    text-align: center;
+    left: 16%;
+    width: 1000px;
+    color : black;
+    font-size: 25px;
+    top: 1100px;
+    font-family: GeneralSansMediumLight;
 }
