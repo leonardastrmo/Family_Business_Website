@@ -1,6 +1,8 @@
 body {
     background-color : #FFFBEE;
     margin: 0px;
+    overflow-x: hidden;
+    height: 100vw;
 }
 
 .navbar ul{
@@ -19,14 +21,14 @@ body {
 .navbar a{
     color: black;
     text-decoration: none;
-    padding: 30px;
     display: block;
     text-align: center;
     font-family: 'GeneralSansMedium';
-    font-size: 17;
-    width: 19.581vw;
+    font-size: 1.5vw;
+    width: 26vw;
+    line-height: 5.2vw;
+    height: 5vw;
 }
-
 .navbar a:hover{
     background-color: white;
     color: #E6B875;
@@ -34,10 +36,14 @@ body {
 
 .navbar li{
     float: left;
-    width: 19.581vw;
+    width: 24.69vw;
 }
 
-#footnote{
+/* #availability{
+    height: 100vh
+} */
+
+#footnote_av{
     font-family: 'GeneralSansLight';
     font-size: 18;
     max-width: 100%;
@@ -45,29 +51,17 @@ body {
     background-color: #E6B875;
     position: relative;
     padding-top: 2%;
-    margin-top: 55%;
+    top:25%;
 }
-
-#footnote2{
+#footnote_gal{
     font-family: 'GeneralSansLight';
     font-size: 18;
     max-width: 100%;
     height: 150px;
     background-color: #E6B875;
     position: relative;
-    /* padding-top: 2%; */
-    padding-bottom: 2%;
-}
-
-#footnote3{
-    font-family: 'GeneralSansLight';
-    font-size: 18;
-    max-width: 100%;
-    height: 150px;
-    background-color: #E6B875;
-    position: relative;
-    padding-bottom: 2%;
-    top: 350px;
+    padding-top: 2%;
+    top: 25%;    
 }
 
 #contact{
@@ -80,25 +74,26 @@ body {
 }
 
 .calendar{
-    width: 40vw;
+    max-width: 60%;
     /* padding-top: 5%; */
-    top: 15%;
+    top: 70px;
     height: auto;
-    position: absolute;
-    left: 5%;
+    position: relative;
+    left: 17%;
     /* border-style: dotted; */
 }
 
 .text{
-    top: 27%;
-    width: 40vw;
+    margin: 0px;
+    width: fit-content;
     height: auto;
-    position: absolute;
-    left: 55%;
+    position: relative;
     /* border-style: dotted; */
     font-family: 'GeneralSansLight';
-    font-size: large;
+    font-size: 1.7vw;
     text-align: left;
+    left: 10%;
+    top: 110px
 }
 
 .p{
@@ -167,3 +162,39 @@ img{
     font-family: 'GeneralSansLight';
     src: url('Fonts/GS\ Light.otf');
 }
+
+@media only screen and (max-width: 1700px) and (min-width: 451px){
+    .navbar a{
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-family: 'GeneralSansMedium';
+        font-size: 1.5vw;
+        width: 27vw;
+        line-height: 5.2vw;
+        height: 5vw;
+   }
+    .navbar li{
+        float: left;
+        width: 24vw;
+    }
+  }
+
+  @media only screen and (max-width: 450px) and (min-width: 1px) {
+    .navbar a{
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-family: 'GeneralSansMedium';
+        font-size: 1.5vw;
+        width: 27vw;
+        line-height: 5.2vw;
+        height: 5vw;
+   }
+    .navbar li{
+        float: left;
+        width: 24vw;
+    }
+  }
