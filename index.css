@@ -119,6 +119,8 @@ body {
     height: auto;
     position: relative;
     float: right;
+    padding-right: 3%;
+    padding-top: 2.7%;
 }
 
 #AboutUs{
@@ -206,7 +208,7 @@ body {
 #amenities{
     position: relative;
     width: fit-content;
-    text-align: center;
+    text-align: right;
     left: 16%;
     font-size: 3.1vw;
     line-height: 1.6;
@@ -333,7 +335,7 @@ body {
 }
 
 .carousel-button.prev{
-    left:0rem;
+    left: 0rem;
     font-size: 4vw;
 }
 
@@ -481,7 +483,7 @@ body {
         top: 180px;
         left: 20%;
         width: 65vw;
-        height: 435px; 
+        height: 370px; 
         overflow-y: hidden;
     }
     
