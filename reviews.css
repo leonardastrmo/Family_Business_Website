@@ -98,67 +98,55 @@ body {
     left: 85%;
 }
 
+*{border: 1px solid red;} 
+
 #CarlGermany{
-    position: absolute;
+    position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
-    line-height: 0.5;
-    top: 360px;
-    left: 7%;
+    line-height: 1.5;
 }
 
 #ClarissaGermany{
-    position: absolute;
+    position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
-    line-height: 0.5;
-    top: 360px;
-    left: 55%;
+    line-height: 1.2;
 }
 
 #Kelly{
-    position: absolute;
+    position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
-    line-height: 0.5;
-    top: 740px;
-    left: 7%;
+    line-height: 1.2;
 }
 
 #ClaudiaAustria{
-    position: absolute;
+    position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
-    line-height: 0.5;
-    top: 690px;
-    left: 54.6%;
+    line-height: 1.2;
 }
 
 #Laura{
-    position: absolute;
+    position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
-    line-height: 0.5;
-    top: 1180px;
-    left: 7%;
+    line-height: 1.2;
 }
 
 #Oscar{
-    position: absolute;
+    position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
-    line-height: 0.5;
-    top: 1340px;
-    left: 55%;
+    line-height: 1.2;
 }
 
 #Mirek{
-    position: absolute;
+    position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
-    line-height: 0.5;
-    top: 1440px;
-    left: 7%;
+    line-height: 1.2;
 }
 
 #footnote{
@@ -168,8 +156,8 @@ body {
     height: 150px;
     background-color: #E6B875;
     position: relative;
-    padding-top: 2%;
-    top:1400px
+    padding-top: 0%;
+    top:20px
 }
 
 #contact{
@@ -179,7 +167,7 @@ body {
     line-height: 1;
     top: 0px;
     left: 7%;
-    height: 150px;
+    height: auto;
 }
 
 @media only screen and (max-width: 450px) and (min-width: 1px) {
@@ -265,7 +253,7 @@ body {
     }
 
     #CarlGermany{
-        width: 90vw;
+        /* width: 90vw; */
         position: relative ;
         border-style: dashed;
         font-family: 'GeneralSansLightItalic';
@@ -273,8 +261,9 @@ body {
         line-height: 1.2;
         top: 0px;
         left: 4%;
+
     }
-    /* *{border: 1px solid red;} */
+    *{border: 1px solid blue;} 
     #ClarissaGermany{
         width: 90vw;
         position: relative;
