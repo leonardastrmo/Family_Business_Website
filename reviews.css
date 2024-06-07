@@ -98,20 +98,22 @@ body {
     left: 85%;
 }
 
-*{border: 1px solid red;} 
-
 #CarlGermany{
     position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
     line-height: 1.5;
-}
+    left: 5%;
+    float: left;}
 
 #ClarissaGermany{
     position: relative;
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
     line-height: 1.2;
+    right: 5%;
+    float: right
+
 }
 
 #Kelly{
@@ -119,6 +121,10 @@ body {
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
     line-height: 1.2;
+    clear: both;
+    left: 5%;
+
+    float: left;
 }
 
 #ClaudiaAustria{
@@ -126,6 +132,8 @@ body {
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
     line-height: 1.2;
+    right: 2.5%;
+    float: right;
 }
 
 #Laura{
@@ -133,6 +141,10 @@ body {
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
     line-height: 1.2;
+    clear: both;
+    left: 5%;
+
+    float: left;
 }
 
 #Oscar{
@@ -140,6 +152,9 @@ body {
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
     line-height: 1.2;
+    right: 5%;
+
+    float: right;
 }
 
 #Mirek{
@@ -147,52 +162,41 @@ body {
     font-family: 'GeneralSansLightItalic';
     font-size: 15;
     line-height: 1.2;
+    clear: both;
+    left: 5%;
+
+    float: left;
+    padding-bottom: 15%;
+
 }
 
 #footnote{
-    font-family: 'GeneralSansLight';
-    font-size: 18;
     max-width: 100%;
     height: 150px;
     background-color: #E6B875;
-    position: relative;
-    padding-top: 0%;
-    top:20px
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #contact{
     position: absolute;
+    top: 5px;
+    height: 40px;
+    left: 7%;
     font-family: 'GeneralSansMedium';
     font-size: 27px;
-    line-height: 1;
-    top: 0px;
+}
+#emailphone{
+    position: absolute;
+    top: 70px;
     left: 7%;
-    height: auto;
+    font-family: 'GeneralSansLight';
+    font-size: 16px;
 }
 
-@media only screen and (max-width: 450px) and (min-width: 1px) {
-
-    #footnote{
-        font-family: 'GeneralSansLight';
-        font-size: 18;
-        max-width: 100%;
-        height: 150px;
-        background-color: #E6B875;
-        position: relative;
-        padding-top: 2%;
-        top:1400px
-    }
-    
-    #contact{
-        position: relative  ;
-        font-family: 'GeneralSansMedium';
-        font-size: 27px;
-        line-height: 1;
-        top: 0px;
-        left: 7%;
-        height: 150px;
-    }
-
+@media only screen and (max-width: 734px) and (min-width: 1px) {
     #adresa{
         position: relative;
         font-family: GeneralSansLight;
@@ -253,25 +257,21 @@ body {
     }
 
     #CarlGermany{
-        /* width: 90vw; */
+        width: 90vw;
         position: relative ;
-        border-style: dashed;
         font-family: 'GeneralSansLightItalic';
         font-size: 15;
         line-height: 1.2;
         top: 0px;
         left: 4%;
-
     }
-    *{border: 1px solid blue;} 
     #ClarissaGermany{
         width: 90vw;
         position: relative;
         font-family: 'GeneralSansLightItalic';
         font-size: 15;
         line-height: 1.2;
-        left: 4%;
-        border-style: dotted;
+        right: 3%;
     }
     
     #Kelly{
@@ -281,6 +281,7 @@ body {
         font-size: 15;
         line-height: 1.2;
         left: 4%;
+
     }
     
     #ClaudiaAustria{
@@ -289,7 +290,7 @@ body {
         font-family: 'GeneralSansLightItalic';
         font-size: 15;
         line-height: 1.2;
-        left: 4%;
+        right: 3%;
     }
     
     #Laura{
@@ -307,7 +308,7 @@ body {
         font-family: 'GeneralSansLightItalic';
         font-size: 15;
         line-height: 1.2;
-        left: 4%;
+        right: 3%;
     }
     
     #Mirek{
@@ -317,6 +318,34 @@ body {
         font-size: 15;
         line-height: 1.2;
         left: 4%;
+        padding-bottom: 40%;
+    }
+
+    #footnote{
+        max-width: 100%;
+        height: 150px;
+        background-color: #E6B875;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    #contact{
+        position: absolute;
+        top: 5px;
+        height: 40px;
+        left: 7%;
+        font-family: 'GeneralSansMedium';
+        font-size: 27px;
+    }
+    #emailphone{
+        position: absolute;
+        top: 70px;
+        left: 7%;
+        font-family: 'GeneralSansLight';
+        font-size: 16px;
     }
   }
 
@@ -376,7 +405,7 @@ body {
         text-align: center;
         font-family: 'GeneralSansMedium';
         font-size: 1.5vw;
-        width: 27vw;
+        width: 24vw;
         line-height: 5.2vw;
         height: 5vw;
    }
