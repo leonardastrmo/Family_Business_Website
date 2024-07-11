@@ -21,8 +21,253 @@
 </nav> 
 
 <body>
+    <style>
+
+        #all{
+            position: relative;
+            left: 25%;
+            width: 60vw;
+            overflow-x: hidden;
+            /* top: 150px; */
+            padding-top: 100px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50vw;
+            height: 30vw;
+            margin: 0%;
+            padding: 0%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+        .red-date {
+            background-color: red;
+        }
+        .red-date-start {
+            background: linear-gradient(to right, white 50%, red 50%);
+
+        }
+        .red-date-end {
+            background: linear-gradient(to left, white 50%, red 50%);
+
+        }
+        .green-date {
+            border: solid;
+            border-color: green;
+        }
+        #prev-year{
+        width: 12.3vw;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 0.975vw;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 10px;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+        #next-year{
+        width: 12.3vw;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 0.975vw;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 10px;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+        #prev-month{
+        width: 5vw;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 0.975vw;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 1vw;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        float:left
+        }
+        
+        #next-month{
+        width: 5vw;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 0.975vw;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 1vw;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        float: left;
+        }
+
+        #prev-year:hover, #next-year:hover, #prev-month:hover, #next-month:hover {
+        box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+        transform: translateY(-2px);
+        }
+
+        #current-date{
+        width: 12.3vw;
+        background-color: white;
+        border: solid;
+        border-color: green;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 0.975vw;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 10px;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+        #current-date:hover{
+        box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+        transform: translateY(-2px);
+        }
+        #reserved{
+        width: 12.3vw;
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: black;
+        cursor: default;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 0.975vw;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 10px;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+        
+        #current-month-year{
+        background-color: #FFFBEE;
+        text-align: center;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 1.5vw;
+        font-weight: 500;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        position: relative;
+        margin: 0%;
+        width: 40vw;
+        overflow: hidden;
+        float: left;
+        top: 0.7vw
+    }
+        #calendar{
+            background-color: white;
+            font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.975vw;
+            font-weight: 400;
+            margin-top: 1%;
+        }
+        #days{
+            background-color: white;
+            font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.975vw;
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <button id="prev-month">&#60;</button>
+        <div id="current-month-year"></div>
+        <button id="next-month">&#62;</button>
+    <table id="calendar">
+        <thead>
+            <tr>
+                <th id="days">Mon</th>
+                <th id="days">Tue</th>
+                <th id="days">Wed</th>
+                <th id="days">Thu</th>
+                <th id="days">Fri</th>
+                <th id="days">Sat</th>
+                <th id="days">Sun</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Calendar dates will be dynamically generated here -->
+        </tbody>
+    </table>
+    <button id="current-date">Today</button>
+    <button id="reserved">Reserved</button>
+    <button id="prev-year">Previous Year</button>
+    <button id="next-year">Next Year</button>
+</div>
+
+    <script src="calendar.js"></script>
     <div id="availability">
-      <img class="calendar" src="the_villa_images/calendar.png">
 
     <p class = 'text'>Prices <span style="font-family:GeneralSansMedium">depend on the season, length of stay, number of people</span>.
         Minimum stay is 6 nights.</br>
