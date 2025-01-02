@@ -171,6 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-10-15',
         '2025-10-16',
         '2025-10-17',
+        '2025-01-08',
 
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
@@ -192,6 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2024-10-15',
         '2024-10-26',
         '2024-12-27',
+        
 
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
