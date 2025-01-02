@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-06-15',
         '2025-06-16',
         '2025-06-17',
-        '2025-06-19',
+        '2025-06-18',
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2024-10-15',
         '2024-10-26',
         '2024-12-27',
-        '2024-04-19',
+        '2025-04-19',
         '2025-05-29',
         
 
