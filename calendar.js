@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-03-26',
         '2025-03-27',
         '2025-03-28',
-        '2025-03-30',
+        '2025-03-29',
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
