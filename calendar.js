@@ -197,6 +197,11 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-06-16',
         '2025-06-17',
         '2025-06-18',
+        '2025-03-25',
+        '2025-03-26',
+        '2025-03-27',
+        '2025-03-28',
+        '2025-03-30',
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
@@ -219,6 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2024-12-27',
         '2025-04-19',
         '2025-05-29',
+        '2025-03-24',
         
 
         // Add more dates in 'YYYY-MM-DD' format as needed
@@ -241,6 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-08-06',
         '2025-04-26',
         '2025-06-19',
+        '2025-03-30',
 
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
