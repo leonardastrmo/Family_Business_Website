@@ -202,6 +202,12 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-03-27',
         '2025-03-28',
         '2025-03-29',
+        '2025-07-08',
+        '2025-07-09',
+        '2025-07-10',
+        '2025-07-11',
+        '2025-07-12',
+        '2025-07-13',       
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
@@ -225,9 +231,9 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-04-19',
         '2025-05-29',
         '2025-03-24',
+        '2025-07-07',        
         
-
-        // Add more dates in 'YYYY-MM-DD' format as needed
+        Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     const redDatesEnd = [
@@ -248,7 +254,8 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-04-26',
         '2025-06-19',
         '2025-03-30',
-
+        '2025-07-14',
+        
         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
