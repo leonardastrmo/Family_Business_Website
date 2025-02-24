@@ -208,8 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-07-11',
         '2025-07-12',
         '2025-07-13',
-        
-        // Add more dates in 'YYYY-MM-DD' format as needed
+         // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     const redDatesStart = [
@@ -234,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-03-24',
         '2025-07-07',        
         
-        Add more dates in 'YYYY-MM-DD' format as needed
+        // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     const redDatesEnd = [
