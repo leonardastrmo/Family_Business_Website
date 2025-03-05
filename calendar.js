@@ -208,7 +208,23 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-07-11',
         '2025-07-12',
         '2025-07-13',
-         // Add more dates in 'YYYY-MM-DD' format as needed
+        '2025-05-18',
+        '2025-05-19',
+        '2025-05-20',
+        '2025-05-21',
+        '2025-05-22',
+        '2025-05-23',
+        '2025-05-24',
+        '2025-05-25',  
+        '2025-05-26',
+        '2025-05-27',   
+        '2025-08-17',
+        '2025-08-18',
+        '2025-08-19',
+        '2025-08-20',  
+        '2025-08-21',
+        '2025-08-22',    
+        // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     const redDatesStart = [
@@ -231,9 +247,9 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-04-19',
         '2025-05-29',
         '2025-03-24',
-        '2025-07-07',        
-        
-        // Add more dates in 'YYYY-MM-DD' format as needed
+        '2025-07-07',  
+        '2025-05-17', 
+        '2025-08-16',        // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     const redDatesEnd = [
@@ -255,8 +271,8 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-06-19',
         '2025-03-30',
         '2025-07-14',
-        
-        // Add more dates in 'YYYY-MM-DD' format as needed
+        '2025-05-28',  
+        '2025-08-23',        // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     function generateCalendar(date) {
