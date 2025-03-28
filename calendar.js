@@ -242,7 +242,8 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-09-24',
         '2025-09-25',
         '2025-09-26',
-        '2025-09-27',        
+        '2025-09-27',  
+        
         / Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
