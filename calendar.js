@@ -242,9 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-09-24',
         '2025-09-25',
         '2025-09-26',
-        '2025-09-27',  
-        
-        / Add more dates in 'YYYY-MM-DD' format as needed
+        '2025-09-27',  // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     const redDatesStart = [
@@ -272,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-08-16',   
         '2025-07-15',
         '2025-09-21',           
-        / Add more dates in 'YYYY-MM-DD' format as needed
+        // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     const redDatesEnd = [
@@ -298,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2025-08-23', 
         '2025-07-29',
         '2025-09-28',        
-        / Add more dates in 'YYYY-MM-DD' format as needed
+        // Add more dates in 'YYYY-MM-DD' format as needed
     ];
 
     function generateCalendar(date) {
