@@ -5,39 +5,40 @@ body {
     overflow-x: hidden;
 }
 
-.navbar ul{
+
+.navbar ul {
     list-style-type: none;
-    background-color:#E6B875;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+    background-color: #E6B875;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap; /* Keep all in one line */
+}
+
+.navbar li {
+    flex: 1; /* Each item takes equal space */
+    text-align: center;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-family: 'GeneralSansMedium';
+    font-size: 1.5vw;
+    padding: 1.2vw 0;
+    height: 100%;
 }
 
 .navbar a.active {
     background-color: white;
     color: #E6B875;
-  }
-
-.navbar a{
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-family: 'GeneralSansMedium';
-    font-size: 1.5vw;
-    width: 26vw;
-    line-height: 5.2vw;
-    height: 5vw;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: white;
     color: #E6B875;
-}
-
-.navbar li{
-    float: left;
-    width: 24.69vw;
 }
 
 
@@ -379,38 +380,3 @@ body {
     src: url('Fonts/GS\ Light.otf');
 }
 
-@media only screen and (max-width: 1700px) and (min-width: 451px){
-    .navbar a{
-        color: black;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        font-family: 'GeneralSansMedium';
-        font-size: 1.5vw;
-        width: 27vw;
-        line-height: 5.2vw;
-        height: 5vw;
-   }
-    .navbar li{
-        float: left;
-        width: 24vw;
-    }
-  }
-
-  @media only screen and (max-width: 450px) and (min-width: 1px) {
-    .navbar a{
-        color: black;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        font-family: 'GeneralSansMedium';
-        font-size: 1.5vw;
-        width: 24vw;
-        line-height: 5.2vw;
-        height: 5vw;
-   }
-    .navbar li{
-        float: left;
-        width: 24vw;
-    }
-  }
