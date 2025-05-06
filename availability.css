@@ -49,7 +49,7 @@ body {
     background-color: #E6B875;
     position: relative;
     padding-top: 2%;
-    top:25%;
+    top: 140px;
 }
 #footnote_gal{
     font-family: 'GeneralSansLight';
@@ -59,7 +59,7 @@ body {
     background-color: #E6B875;
     position: relative;
     padding-top: 2%;
-    top: 25%;    
+    top: 26%;    
 }
 
 #contact{
