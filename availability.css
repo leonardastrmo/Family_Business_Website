@@ -88,10 +88,10 @@ body {
     position: relative;
     /* border-style: dotted; */
     font-family: 'GeneralSansLight';
-    font-size: 1.4vw;
+    font-size: 1.25vw;
     text-align: left;
     left: 19%;
-    top: 35px
+    top: 15px
 }
 
 .p{
