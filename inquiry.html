@@ -74,28 +74,23 @@
     }
   </style>
   
-  <h2 style="font-family: GeneralSansMedium; text-align: left; font-size: 1.77rem; margin-top: 30px; margin-left: 315px;">Get in touch with us!</h2>
+  <h2 style="font-family: GeneralSansMedium; text-align: left; font-size: 1.77rem; margin-top: 30px; margin-left: 315px;">Want to get in touch with us?</h2>
 
   <div class="container">
     <h2>Inquiry Form</h2>
-    <form action="https://formspree.io/f/mldbbznn" method="POST">
-      <!-- Replace "your-form-id" with your actual Formspree ID -->
-
+    <form id="inquiry-form" action="https://formspree.io/f/mldbbznn" method="POST">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
-
-      <label for="email">Email address - so we can get back to you!</address></label>
+    
+      <label for="email">Email address - so we can get back to you!</label>
       <input type="email" id="email" name="email" required>
-
+    
       <label for="dates">Desired Dates</label>
       <input type="text" id="dates" name="dates" placeholder="e.g. July 10–15, 2025" required>
-
+    
       <label for="message">Any Additional Notes</label>
       <textarea id="message" name="message" rows="5" placeholder="Any specific questions or requests?"></textarea>
-
-      <!-- Optional: redirect to a thank you page -->
-      <input type="hidden" name="_redirect" value="https://leonardastrmo.github.io/Family_Business_Website/thank-you.html">
-
+    
       <button type="submit">Submit Inquiry</button>
     </form>
   </div>
@@ -110,5 +105,27 @@
       </span>
     </div>
 </div>
+<script>
+  const form = document.getElementById('inquiry-form');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      window.location.href = "https://leonardastrmo.github.io/Family_Business_Website/thank-you.html";
+    } else {
+      alert("There was a problem submitting the form.");
+    }
+  });
+</script>
 </body>
 </html>
+
