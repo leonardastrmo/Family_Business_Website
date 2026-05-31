@@ -373,8 +373,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const redDatesEnd = [
-        '2026-07-31'
-        '2026-07-11'
+        '2026-07-31',
+        '2026-07-11',
         '2026-06-19',
         '2026-08-16',
         '2026-10-31',
